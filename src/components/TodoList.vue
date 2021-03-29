@@ -13,7 +13,7 @@
      >
         <b-row :key="index" v-for="(todo, index) in todos" class="mt-2">
           <b-col cols="8" :class="[{line: todo.complete}, 'text-left']">
-            <h5>{{todo.text}}</h5>
+            <h5>{{todo.type}}</h5>
           </b-col>
           <b-col cols="4" class="text-right">
             <b-button 
