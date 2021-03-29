@@ -27,7 +27,7 @@ import TodoList from '@/components/TodoList';
     methods: {
       handleParentAddTodo(value) {
         if(value) {
-          this.todos.unshift({text: value, complete: false});
+          this.todos.unshift({type: value, complete: false});
         }
       },
       handleParentDeleteTodo(index) {
