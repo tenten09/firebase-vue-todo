@@ -10,7 +10,7 @@
           </b-col> -->
 
           <b-col sm="9">
-            <b-form-input :id="`type-${type}`" :type="type" v-model="value"></b-form-input>
+            <b-form-input :id="`type-${type}`" :type="type" v-model="value"/>
           </b-col>
         </b-row>
         <b-input-group-append>
@@ -31,6 +31,9 @@
           'text',
           'date',
           'time',
+        ],
+        type1: [
+          'date'
         ]
       };
     },
