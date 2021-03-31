@@ -2,17 +2,19 @@
   <div>
     <b-container>
       <b-input-group>
-        <!-- <b-form-input type="text" v-model="value"/> -->
+        <b-form-input type="text" v-model="value"/>
+        <!-- <b-form-input type="text" v-model="value" key="type" /> -->
+        <b-form-input :id="`type-${type}`" :type="date" key="type"/>
 
-        <b-row class="my-1" v-for="type in types" :key="type">
-          <!-- <b-col sm="3">
+        <!-- <b-row class="my-1" v-for="type in types" :key="type">
+          <b-col sm="3">
             <label :for="`type-${type}`">Type <code>{{ type }}</code>:</label>
-          </b-col> -->
+          </b-col>
 
           <b-col sm="9">
-            <b-form-input :id="`type-${type}`" :type="type" v-model="value"/>
+            <b-form-input :id="`type-${type}`" :type="type"/>
           </b-col>
-        </b-row>
+        </b-row> -->
         <b-input-group-append>
           <b-button variant="info" @click="handleAddTodo">送信</b-button>
         </b-input-group-append>
@@ -28,13 +30,9 @@
       return {
         value: '',
         types: [
-          'text',
           'date',
           'time',
         ],
-        type1: [
-          'date'
-        ]
       };
     },
     methods: {
