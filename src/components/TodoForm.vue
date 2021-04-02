@@ -4,7 +4,6 @@
       <b-input-group>
         <b-form-input type="text" v-model="value"/>
         <!-- <b-form-input type="text" v-model="value" key="type" /> -->
-        <b-form-input :id="`type-${type}`" :type="date" key="type"/>
 
         <!-- <b-row class="my-1" v-for="type in types" :key="type">
           <b-col sm="3">
