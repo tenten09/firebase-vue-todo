@@ -79,9 +79,10 @@
     "vue-style-loader": "^3.0.1",
     "vue-template-compiler": "^2.5.2",
     "vuetify-loader": "^1.7.0",
-    "webpack": "^5.30.0",
+    "webpack": "^4.19.1",
     "webpack-bundle-analyzer": "^4.4.0",
-    "webpack-dev-server": "^3.11.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.1.8",
     "webpack-merge": "^4.1.0"
   },
   "browserslist": [
@@ -92,5 +93,19 @@
   "engines": {
     "node": ">= 6.0.0",
     "npm": ">= 3.0.0"
-  }
+  },
+  "main": ".eslintrc.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tenten09/firebase-vue-todo.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tenten09/firebase-vue-todo/issues"
+  },
+  "homepage": "https://github.com/tenten09/firebase-vue-todo#readme",
+  "keywords": []
 }
